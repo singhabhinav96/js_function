@@ -42,6 +42,20 @@ calculateSupply(age, amount_per_day);
 
 ```js
 // your code goes here
+//C to F
+var celsius = prompt("Enter temperature in celsius");
+function celsiusToFahrenheit(celsius) {
+  var fahrenheit = (celsius * 9) / 5 + 32;
+  return celsius + "C is " + fahrenheit + "F";
+}
+celsiusToFahrenheit(celsius);
+//F to C
+var fahrenheit = prompt("Enter temperature in fahrenheit");
+function fahrenheitToCelsius() {
+  var celsius = (fahrenheit * 9) / 5 - 32;
+  return fahrenheit + " F is " + celsius + " C";
+}
+celsiusToFahrenheit(fahrenheit);
 ```
 
 4. 🎖The function below returns true if the parameter age is greater than 18. Otherwise it asks for a confirmation and returns its result:
