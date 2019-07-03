@@ -18,17 +18,18 @@
 
 ```js
 // your code goes here
-function calculateSupply() {
-  var age = prompt("Enter age");
-  var amount_per_day = prompt("Enter amount per day");
-  var result = Number(age) * Number(amount_per_day);
-  console.log(
+var age = prompt("Enter age");
+var amount_per_day = prompt("Enter amount per day");
+function calculateSupply(age, amt) {
+  var result = Number(age) * Number(amt);
+  return (
     "You will need " +
-      Math.round(result) +
-      " to last you until the ripe old age of " +
-      age
+    Math.round(result) +
+    " to last you until the ripe old age of " +
+    age
   );
 }
+calculateSupply(age, amount_per_day);
 ```
 
 3. 🎖Create a function called celsiusToFahrenheit:
